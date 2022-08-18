@@ -11,46 +11,61 @@
         <h1>Encabezado pendiente</h1>
     </div>
     <div class="container" style="min-height: 600px;">
-        <table class="table">
-            <thead>
-              <tr>
-                <th scope="col">Producto</th>
-                <th scope="col">Descripción</th>
-                <th scope="col">Imagen</th>
-                <th scope="col">Precio</th>
-                <th scope="col">Comprar</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">Producto 1</th>
-                <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porttitor lorem in auctor consectetur. Nunc nec quam ex. Proin id molestie ex, nec tempor tellus. </td>
-                <td>
-                    <img src="https://cdn0.iconfinder.com/data/icons/basic-e-commerce-line-color/48/Package-256.png" style="width: 100px; height:auto;">
-                </td>
-                <td><span class="badge text-bg-success">$100</span></td>
-                <td><button type="button" class="btn btn-outline-primary">Comprar</button></td>
-              </tr>
-              <tr>
-                <th scope="row">Producto 2</th>
-                <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porttitor lorem in auctor consectetur. Nunc nec quam ex. Proin id molestie ex, nec tempor tellus. </td>
-                <td>
-                    <img src="https://cdn0.iconfinder.com/data/icons/basic-e-commerce-line-color/48/Package-256.png" style="width: 100px; height:auto;">
-                </td>
-                <td><span class="badge text-bg-success">$100</span></td>
-                <td><button type="button" class="btn btn-outline-primary">Comprar</button></td>
-              </tr>
-              <tr>
-                <th scope="row">Producto 3</th>
-                <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porttitor lorem in auctor consectetur. Nunc nec quam ex. Proin id molestie ex, nec tempor tellus. </td>
-                <td>
-                    <img src="https://cdn0.iconfinder.com/data/icons/basic-e-commerce-line-color/48/Package-256.png" style="width: 100px; height:auto;">
-                </td>
-                <td><span class="badge text-bg-success">$100</span></td>
-                <td><button type="button" class="btn btn-outline-primary">Comprar</button></td>
-              </tr>
-            </tbody>
-        </table>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+              <div class="card text-center">
+                <div class="alert alert-primary" role="alert">
+                    ¡Este producto tiene descuento!
+                  </div>
+                <img src="https://cdn0.iconfinder.com/data/icons/basic-e-commerce-line-color/48/Package-256.png" style="width: 100px; height:auto; align-self: center;" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Producto 1 <span class="badge text-bg-success">$100</span> </h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porttitor lorem in auctor consectetur. Nunc nec quam ex. Proin id molestie ex, nec tempor tellus.</p>
+                  <button type="button" class="btn btn-outline-info" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">Ver comentarios</button>
+                  <button type="button" class="btn btn-outline-primary">Comprar</button>
+                  <div style="margin-top: 20px;">
+                    <div class="collapse" id="collapseWidthExample">
+                      <div class="card card-body" style="width: 100%;">
+                        <ul>
+                            <li>
+                                Primer comentario
+                            </li>
+                            <li>
+                                Segundo comentario
+                            </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+                <div class="card text-center">
+                <img src="https://cdn0.iconfinder.com/data/icons/basic-e-commerce-line-color/48/Package-256.png" style="width: 100px; height:auto; align-self: center;" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Producto 1 <span class="badge text-bg-success">$100</span> </h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porttitor lorem in auctor consectetur. Nunc nec quam ex. Proin id molestie ex, nec tempor tellus.</p>
+                    <button type="button" class="btn btn-outline-info" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">Ver comentarios</button>
+                    <button type="button" class="btn btn-outline-primary">Comprar</button>
+                    <div style="margin-top: 20px;">
+                    <div class="collapse" id="collapseWidthExample">
+                        <div class="card card-body" style="width: 100%;">
+                        <ul>
+                            <li>
+                                Primer comentario
+                            </li>
+                            <li>
+                                Segundo comentario
+                            </li>
+                        </ul>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="container" style="background-color: grey;">
         <h1>Pie de pagina pendiente</h1>
